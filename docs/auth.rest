@@ -1,0 +1,32 @@
+POST http://127.0.0.1:8000/api/v1/auth/register
+Accept: application/json
+Content-Type: application/json
+
+{
+    "name": "erick",
+    "email": "erick@gmail.com",
+    "password": "erick123"
+}
+
+
+###
+POST http://127.0.0.1:8000/api/v1/auth/login
+Accept: application/json
+Content-Type: application/json
+
+{
+    "email": "erick@gmail.com",
+    "password": "erick123"
+}
+
+
+###
+GET http://127.0.0.1:8000/api/v1/auth/profile
+Accept: application/json
+Authorization: Bearer 3|ki8p1Zm79h23dOYGI4YB9tVpJE4IFgVZYWJJ2gFub30f9342
+
+
+###
+POST http://127.0.0.1:8000/api/v1/auth/logout
+Accept: application/json
+Authorization: Bearer 2|LxIDu47L6ZbfRkNDAvi9f45TWwWVKoOv86oqKweT8a89c0f6

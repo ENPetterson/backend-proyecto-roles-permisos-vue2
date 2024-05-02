@@ -1,0 +1,17 @@
+GET http://127.0.0.1:8000/api/users?limit=1&page=&q=er
+Accept: application/json
+Authorization: Bearer 4|YjFnrh0oCgDevVPbjPA3g9jXQevspaaJ1sUdSKRA6595647c
+###
+POST http://127.0.0.1:8000/api/users
+Accept: application/json
+Content-Type: application/json
+
+{
+    "name": "juanito",
+    "email": "juanito@gmail.com",
+    "password": "juanito123"
+}
+
+###
+GET http://127.0.0.1:8000/api/users/2
+Accept: application/json
